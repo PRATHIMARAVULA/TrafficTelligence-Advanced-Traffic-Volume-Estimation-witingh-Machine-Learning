@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import OneHotEncoder
 
 # Load dataset
-data = pd.read_csv(r"C:\Users\patel\Downloads\traffic_volume.csv")
+data = pd.read_csv("traffic_volume.csv")  # Use this if the file is in the same folder as model.py
 
 # Define target variable
 target = "traffic_volume"

@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 from flask import Flask, request, render_template
 
-app = Flask(__name__, template_folder='template')
+app = Flask(__name__, template_folder='templates')
 
 # Load trained model and encoder
 model = pickle.load(open("model.pkl", "rb"))
